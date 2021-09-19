@@ -27,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server server.json -p 3333"
+    "server": "json-server server.json -p 3333",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -42,11 +43,14 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@testing-library/react-hooks": "^5.1.0",
     "@types/react-icons": "^3.0.0",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.7",
     "axios-mock-adapter": "^1.19.0",
+    "husky": "^7.0.2",
     "json-server": "^0.16.3"
   },
   "eslintConfig": {
